@@ -84,7 +84,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Search";
+            this.button1.Text = "Search11";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // groupBox1

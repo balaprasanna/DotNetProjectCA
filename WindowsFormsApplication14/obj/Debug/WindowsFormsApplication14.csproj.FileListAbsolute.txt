@@ -7,3 +7,6 @@ c:\users\kiran\documents\visual studio 2013\Projects\WindowsFormsApplication14\W
 c:\users\kiran\documents\visual studio 2013\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csproj.GenerateResource.Cache
 c:\users\kiran\documents\visual studio 2013\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.exe
 c:\users\kiran\documents\visual studio 2013\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.pdb
+C:\Users\Kiran\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe.config
+C:\Users\Kiran\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.exe
+C:\Users\Kiran\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.pdb
