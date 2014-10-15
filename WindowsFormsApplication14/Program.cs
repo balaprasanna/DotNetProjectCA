@@ -6,6 +6,23 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication14
 {
+    public class MyController
+    {
+        public MyController()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new ParentForm(this));
+        }
+        public void search()
+        {
+            SearchController search = new SearchController();
+            
+           // Search searchScreen = new Search();
+           // searchScreen.Show();
+        }
+
+    }
     static class Program
     {
         /// <summary>
@@ -14,9 +31,10 @@ namespace WindowsFormsApplication14
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            MyController mc = new MyController();
+           // Application.EnableVisualStyles();
+           // Application.SetCompatibleTextRenderingDefault(false);
+           // Application.Run(new Form1());
         }
     }
 }

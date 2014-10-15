@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SportsCenterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BookingDetailsTable">
+          <Key>
+            <PropertyRef Name="BookingID" />
+          </Key>
+          <Property Name="BookingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EquipmentID" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="ICNumber" Type="nvarchar" MaxLength="10" />
+          <Property Name="Slot" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MemberDetails">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MemberName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="ICNumber" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="SlotAvailability">
+          <Key>
+            <PropertyRef Name="SlotAvailID" />
+          </Key>
+          <Property Name="SlotAvailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="EquipmentID" Type="int" Nullable="false" />
+          <Property Name="Slot1" Type="int" />
+          <Property Name="Slot2" Type="int" />
+          <Property Name="Slot3" Type="int" />
+          <Property Name="Slot4" Type="int" />
+          <Property Name="Slot5" Type="int" />
+          <Property Name="Slot6" Type="int" />
+          <Property Name="Slot7" Type="int" />
+          <Property Name="Slot8" Type="int" />
+          <Property Name="Slot9" Type="int" />
+          <Property Name="Slot10" Type="int" />
+          <Property Name="Slot11" Type="int" />
+          <Property Name="Slot12" Type="int" />
+        </EntityType>
+        <EntityType Name="SportsFacilityDetails">
+          <Key>
+            <PropertyRef Name="EquipmentID" />
+          </Key>
+          <Property Name="EquipmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EqipmentName" Type="nvarchar" MaxLength="25" Nullable="false" />
+          <Property Name="EquipmentCount" Type="int" Nullable="false" />
+          <Property Name="AllowNonMembers" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="NonMemberCount" Type="int" />
+        </EntityType>
+        <EntityContainer Name="SportsCenterModelStoreContainer">
+          <EntitySet Name="BookingDetailsTable" EntityType="Self.BookingDetailsTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberDetails" EntityType="Self.MemberDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SlotAvailability" EntityType="Self.SlotAvailability" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SportsFacilityDetails" EntityType="Self.SportsFacilityDetails" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SportsCenterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BookingDetailsTable">
+          <Key>
+            <PropertyRef Name="BookingID" />
+          </Key>
+          <Property Name="BookingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EquipmentID" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ICNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Slot" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MemberDetail">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MemberName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ICNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SlotAvailability">
+          <Key>
+            <PropertyRef Name="SlotAvailID" />
+          </Key>
+          <Property Name="SlotAvailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EquipmentID" Type="Int32" Nullable="false" />
+          <Property Name="Slot1" Type="Int32" />
+          <Property Name="Slot2" Type="Int32" />
+          <Property Name="Slot3" Type="Int32" />
+          <Property Name="Slot4" Type="Int32" />
+          <Property Name="Slot5" Type="Int32" />
+          <Property Name="Slot6" Type="Int32" />
+          <Property Name="Slot7" Type="Int32" />
+          <Property Name="Slot8" Type="Int32" />
+          <Property Name="Slot9" Type="Int32" />
+          <Property Name="Slot10" Type="Int32" />
+          <Property Name="Slot11" Type="Int32" />
+          <Property Name="Slot12" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SportsFacilityDetail">
+          <Key>
+            <PropertyRef Name="EquipmentID" />
+          </Key>
+          <Property Name="EquipmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EqipmentName" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EquipmentCount" Type="Int32" Nullable="false" />
+          <Property Name="AllowNonMembers" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NonMemberCount" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="SportsCenterEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BookingDetailsTables" EntityType="Self.BookingDetailsTable" />
+          <EntitySet Name="MemberDetails" EntityType="Self.MemberDetail" />
+          <EntitySet Name="SlotAvailabilities" EntityType="Self.SlotAvailability" />
+          <EntitySet Name="SportsFacilityDetails" EntityType="Self.SportsFacilityDetail" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SportsCenterModelStoreContainer" CdmEntityContainer="SportsCenterEntities">
+          <EntitySetMapping Name="BookingDetailsTables">
+            <EntityTypeMapping TypeName="SportsCenterModel.BookingDetailsTable">
+              <MappingFragment StoreEntitySet="BookingDetailsTable">
+                <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+                <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="ICNumber" ColumnName="ICNumber" />
+                <ScalarProperty Name="Slot" ColumnName="Slot" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MemberDetails">
+            <EntityTypeMapping TypeName="SportsCenterModel.MemberDetail">
+              <MappingFragment StoreEntitySet="MemberDetails">
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="ICNumber" ColumnName="ICNumber" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SlotAvailabilities">
+            <EntityTypeMapping TypeName="SportsCenterModel.SlotAvailability">
+              <MappingFragment StoreEntitySet="SlotAvailability">
+                <ScalarProperty Name="SlotAvailID" ColumnName="SlotAvailID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+                <ScalarProperty Name="Slot1" ColumnName="Slot1" />
+                <ScalarProperty Name="Slot2" ColumnName="Slot2" />
+                <ScalarProperty Name="Slot3" ColumnName="Slot3" />
+                <ScalarProperty Name="Slot4" ColumnName="Slot4" />
+                <ScalarProperty Name="Slot5" ColumnName="Slot5" />
+                <ScalarProperty Name="Slot6" ColumnName="Slot6" />
+                <ScalarProperty Name="Slot7" ColumnName="Slot7" />
+                <ScalarProperty Name="Slot8" ColumnName="Slot8" />
+                <ScalarProperty Name="Slot9" ColumnName="Slot9" />
+                <ScalarProperty Name="Slot10" ColumnName="Slot10" />
+                <ScalarProperty Name="Slot11" ColumnName="Slot11" />
+                <ScalarProperty Name="Slot12" ColumnName="Slot12" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SportsFacilityDetails">
+            <EntityTypeMapping TypeName="SportsCenterModel.SportsFacilityDetail">
+              <MappingFragment StoreEntitySet="SportsFacilityDetails">
+                <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+                <ScalarProperty Name="EqipmentName" ColumnName="EqipmentName" />
+                <ScalarProperty Name="EquipmentCount" ColumnName="EquipmentCount" />
+                <ScalarProperty Name="AllowNonMembers" ColumnName="AllowNonMembers" />
+                <ScalarProperty Name="NonMemberCount" ColumnName="NonMemberCount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
