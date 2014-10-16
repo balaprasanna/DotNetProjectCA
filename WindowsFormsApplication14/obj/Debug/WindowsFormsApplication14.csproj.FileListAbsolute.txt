@@ -10,9 +10,25 @@ c:\users\kiran\documents\visual studio 2013\Projects\WindowsFormsApplication14\W
 C:\Users\Kiran\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe.config
 C:\Users\Kiran\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.exe
 C:\Users\Kiran\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.pdb
-C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe.config
-C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.exe
 C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.pdb
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.BarchartScreen.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Booking_Details_Receipt.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\create_member.Booking.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.BookingUI.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.CancelBookingForm.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.CreateMemberForm.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.CreateNewEquipment.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.ListOfMember.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.ManagementReport.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Search.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.ParentForm.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Properties.Resources.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.SelectMember.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.SelectSportFacility.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.UpdateMemberScreen.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.UpdateSportsFacility.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csproj.GenerateResource.Cache
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe.config
 C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe
 C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.pdb
 C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\EntityFramework.dll
@@ -20,9 +36,4 @@ C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bi
 C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\EntityFramework.xml
 C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csprojResolveAssemblyReference.cache
-C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.CreateMemberDetails.resources
-C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Properties.Resources.resources
-C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csproj.GenerateResource.Cache
-C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Search.resources
-C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\Mainwindow.HomeScreen.resources
-C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.ParentForm.resources
+C:\Users\Prasanna Mac\Source\Repos\DotNetProjectCA2\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.exe

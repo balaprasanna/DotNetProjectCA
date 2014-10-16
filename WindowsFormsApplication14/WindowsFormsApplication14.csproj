@@ -32,18 +32,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,28 +60,119 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Avialibilities.DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Avialibilities.DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BarchartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarchartScreen.Designer.cs">
+      <DependentUpon>BarchartScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking Details Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking Details Receipt.Designer.cs">
+      <DependentUpon>Booking Details Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookingController.cs" />
+    <Compile Include="BookingDetailsCrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookingDetailsCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BookingDetailsTable.cs">
       <DependentUpon>SportsCenterModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CancelController.cs" />
-    <Compile Include="CreateMemberDetails.cs">
+    <Compile Include="bookingdetalstableDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bookingdetalstableDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookingUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateMemberDetails.Designer.cs">
-      <DependentUpon>CreateMemberDetails.cs</DependentUpon>
+    <Compile Include="BookingUI.Designer.cs">
+      <DependentUpon>BookingUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelBookingForm.Designer.cs">
+      <DependentUpon>CancelBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelController.cs" />
+    <Compile Include="CreateMemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateMemberForm.Designer.cs">
+      <DependentUpon>CreateMemberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewEquipment.Designer.cs">
+      <DependentUpon>CreateNewEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfMember.Designer.cs">
+      <DependentUpon>ListOfMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfMemberDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListOfMemberDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfMemberReports.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListOfMemberReports.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManagementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementReport.Designer.cs">
+      <DependentUpon>ManagementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRCrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MRDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Search.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HomeScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HomeScreen.designer.cs">
-      <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="MemberDetail.cs">
       <DependentUpon>SportsCenterModel.tt</DependentUpon>
@@ -89,8 +186,35 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchController.cs" />
+    <Compile Include="SelectMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectMember.Designer.cs">
+      <DependentUpon>SelectMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectSportFacility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectSportFacility.Designer.cs">
+      <DependentUpon>SelectSportFacility.cs</DependentUpon>
+    </Compile>
     <Compile Include="SlotAvailability.cs">
       <DependentUpon>SportsCenterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SportsCenterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SportsCenterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SportsCenterDataSet_MemberIcNumber_And_MemberID.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SportsCenterDataSet_MemberIcNumber_And_MemberID.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SportsCenterDataSet_SelectMember.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SportsCenterDataSet_SelectMember.xsd</DependentUpon>
     </Compile>
     <Compile Include="SportsCenterModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -110,14 +234,63 @@
     <Compile Include="SportsFacilityDetail.cs">
       <DependentUpon>SportsCenterModel.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CreateMemberDetails.resx">
-      <DependentUpon>CreateMemberDetails.cs</DependentUpon>
+    <Compile Include="UpdateMemberScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMemberScreen.Designer.cs">
+      <DependentUpon>UpdateMemberScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSportsFacility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSportsFacility.Designer.cs">
+      <DependentUpon>UpdateSportsFacility.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BarchartScreen.resx">
+      <DependentUpon>BarchartScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking Details Receipt.resx">
+      <DependentUpon>Booking Details Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingDetailsCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BookingDetailsCrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingUI.resx">
+      <DependentUpon>BookingUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelBookingForm.resx">
+      <DependentUpon>CancelBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateMemberForm.resx">
+      <DependentUpon>CreateMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewEquipment.resx">
+      <DependentUpon>CreateNewEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfMember.resx">
+      <DependentUpon>ListOfMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfMemberReports.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListOfMemberReports.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementReport.resx">
+      <DependentUpon>ManagementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MRCrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HomeScreen.resx">
-      <DependentUpon>HomeScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
@@ -131,6 +304,73 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SelectMember.resx">
+      <DependentUpon>SelectMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSportFacility.resx">
+      <DependentUpon>SelectSportFacility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMemberScreen.resx">
+      <DependentUpon>UpdateMemberScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSportsFacility.resx">
+      <DependentUpon>UpdateSportsFacility.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Avialibilities.DataSet1.xsc">
+      <DependentUpon>Avialibilities.DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Avialibilities.DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Avialibilities.DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Avialibilities.DataSet1.xss">
+      <DependentUpon>Avialibilities.DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bookingdetalstableDataSet1.xsc">
+      <DependentUpon>bookingdetalstableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bookingdetalstableDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bookingdetalstableDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bookingdetalstableDataSet1.xss">
+      <DependentUpon>bookingdetalstableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ListOfMemberDataSet1.xsc">
+      <DependentUpon>ListOfMemberDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ListOfMemberDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListOfMemberDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ListOfMemberDataSet1.xss">
+      <DependentUpon>ListOfMemberDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MRDataSet1.xsc">
+      <DependentUpon>MRDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MRDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MRDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MRDataSet1.xss">
+      <DependentUpon>MRDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -145,6 +385,39 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SportsCenterModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="SportsCenterDataSet.xsc">
+      <DependentUpon>SportsCenterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SportsCenterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SportsCenterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SportsCenterDataSet.xss">
+      <DependentUpon>SportsCenterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SportsCenterDataSet_MemberIcNumber_And_MemberID.xsc">
+      <DependentUpon>SportsCenterDataSet_MemberIcNumber_And_MemberID.xsd</DependentUpon>
+    </None>
+    <None Include="SportsCenterDataSet_MemberIcNumber_And_MemberID.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SportsCenterDataSet_MemberIcNumber_And_MemberID.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SportsCenterDataSet_MemberIcNumber_And_MemberID.xss">
+      <DependentUpon>SportsCenterDataSet_MemberIcNumber_And_MemberID.xsd</DependentUpon>
+    </None>
+    <None Include="SportsCenterDataSet_SelectMember.xsc">
+      <DependentUpon>SportsCenterDataSet_SelectMember.xsd</DependentUpon>
+    </None>
+    <None Include="SportsCenterDataSet_SelectMember.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SportsCenterDataSet_SelectMember.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SportsCenterDataSet_SelectMember.xss">
+      <DependentUpon>SportsCenterDataSet_SelectMember.xsd</DependentUpon>
+    </None>
     <None Include="SportsCenterModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SportsCenterModel.edmx</DependentUpon>
@@ -164,6 +437,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

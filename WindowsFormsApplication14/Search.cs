@@ -64,12 +64,14 @@ namespace WindowsFormsApplication14
                 // then updates the UI
                 lblAvailabilityStatus.Text = "Available";
                 lblAvailabilityStatus.BackColor = System.Drawing.Color.Green;
+                toolStripStatusLabel1.Text = "Available";
             }
             else
             {
                 //else update the Ui
                 lblAvailabilityStatus.Text = "N/A";
                 lblAvailabilityStatus.BackColor = System.Drawing.Color.Red;
+                toolStripStatusLabel1.Text = "N/A";
             }
             dataGridView1.DataSource = mCallerSearch.fillByEquipment(comboBox2.SelectedValue.ToString(),comboBox1.SelectedIndex);
             dataGridView2.DataSource = mCallerSearch.fillBySlot(comboBox2.SelectedValue.ToString(), comboBox1.SelectedIndex);

@@ -22,6 +22,19 @@ namespace WindowsFormsApplication14
            // searchScreen.Show();
         }
 
+        public void Book()
+        {
+            BookingController search = new BookingController();
+
+            // Search searchScreen = new Search();
+            // searchScreen.Show();
+        }
+
+        public void Cancel()
+        {
+            CancelController cancel = new CancelController();
+        }
+
     }
     static class Program
     {
